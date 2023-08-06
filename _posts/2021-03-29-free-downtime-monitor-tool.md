@@ -32,7 +32,7 @@ Features in Slack that we are going to use for this use case are:
 
 To quickly get setup with a Slack Workspace go to this slack getting started page.
 
-![Signup up]({{ baseurl}}/assets/image/slack-image-signup.png)
+![Signup up]({{ site.baseurl }}/assets/image/slack-image-signup.png)
 
 You only need to enter your existing email address along with some personal information to get set up. For a more comprehensive guide you can go the following blog post on slack.com.
 
@@ -40,7 +40,7 @@ You only need to enter your existing email address along with some personal info
 
 Creating a new channel is easy enough by clicking on the add channels button in the left navigation area, a popup dialog like the following is going to show.
 
-![New Channel]({{ baseurl}}/assets/image/slack-create-private-channel.png)
+![New Channel]({{ site.baseurl }}/assets/image/slack-create-private-channel.png)
 
 
 I suggest making this new channel a private one, as we don't want just anyone with workspace access to receive these notifications, its better if we control who has access to that.
