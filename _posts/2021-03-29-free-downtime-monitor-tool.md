@@ -2,7 +2,6 @@
 layout: post
 title: Free Downtime Monitor Tool - How to Setup?
 categories: [bash, slack]
-draft: true
 ---
 
 There are more than a few services that provide various tools for monitoring your website's uptime, but if you're anything like me, meaning you don't want to spend that much and you just want something simple that would notify you when your website goes down, the following would be a perfect solution for you.
