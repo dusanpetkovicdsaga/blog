@@ -38,6 +38,9 @@ navigation_links:
   - title: About
     url: /blog/about
 
+  - title: Contact
+    url: /blog/contact
+
   - title: Search
     url: /blog/search
 
