@@ -54,6 +54,10 @@ footer_links:
     url: https://www.linkedin.com/in/dusan-petkovic-5116b570/
     icon: fa fa-linkedin-square
 
+  - title: Resume / CV
+    url: /resume
+    icon: fa fa-print
+
   - title: My Github
     url: https://github.com/dsaga
     icon: fa fa-github-square
