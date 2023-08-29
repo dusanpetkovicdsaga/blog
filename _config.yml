@@ -43,6 +43,7 @@ navigation_links:
 
   - title: Search
     url: /blog/search
+    icon: fa fa-search
 
 # Footer icons
 footer_links:

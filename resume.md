@@ -5,11 +5,18 @@ permalink: /resume
 withPrint: true
 ---
 
-<img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin:10px;float:right;" />
+<img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin:10px;" />
+
+## :large_orange_diamond: Skills
+
+:green_book: ReactJs (14+) | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
+:green_book: NextJs | :green_book:Express | :green_book: NodeJs |:blue_book: MySQL | :blue_book: MongoDB 
+:green_book: SASS | :green_book: LESS | :green_book: HTML5 | :orange_book: Photoshop | :orange_book: Ilustrator
 
 ## Work Experience
 
-#### :large_blue_diamond: Senior Frontend Software Engineer | QCerris | 2020 – present
+#### :large_blue_diamond: Senior Frontend Software Engineer | QCerris
+_2020 – present_
 
 - As part of a development team was involved in planning and architecture of a healthy food delivery platform, our team successfully built a working meal planner based a user current diet, built using the following stack: React, Java, Jenkins.
 
@@ -21,7 +28,8 @@ withPrint: true
 
 - Streamlined the tracking visibility platform translation process, by implementing a full circle translation upload process using Jenkins, nodejs, firebase, etc…
 
-#### :large_blue_diamond: Frontend Software Engineer | GenEng and Biotech News | 2018 - 2019
+#### :large_blue_diamond: Frontend Software Engineer | GenEng and Biotech News
+_2018 - 2019_
 
 - Created a custom ReactJS interface for managing email campaigns, the interface allows full-fledged content management for email templates.
 
@@ -31,7 +39,8 @@ withPrint: true
 
 - Created a ReactJS interface for organizing articles inside categories and ordering them with a drag and drop functionality.
 
-#### :large_blue_diamond: Full Stack Software Engineer | Command Media | 2014 - 2017
+#### :large_blue_diamond: Full Stack Software Engineer | Command Media
+_2014 - 2017_
 
 - Improved all projects codebases by initiating code reviews amongst the team.
 
@@ -51,39 +60,25 @@ withPrint: true
 
 #### Other Experiences
 
-- Web Developer / Web Developer - UpperEastDesign - 2012 - 2013
+- ##### Web Developer / Web Developer - UpperEastDesign
+_2012 - 2013_
 
-- Web Developer / Web Designer - TehnoMS - 2011 - 2012
-
-## :large_orange_diamond: Skills
-
-#### React, TypeScript, JavaScript
-
-- Up to date with the latest technologies in the front end application development.
-
-#### HTML5 / CSS3
-
-- Using the latest HTML5 technologies, LESS and SASS CSS extension languages, CSS transition, and animations.
-
-#### Server Side
-
-- Experience with MySQL, MongoDB, Nodejs, Nestjs, Laravel, Codeigniter.
-
-#### Graphic Tools
-
-- Proficient in Adobe Photoshop and Adobe Illustrator
+- ##### Web Developer / Web Designer - TehnoMS
+_2011 - 2012_
 
 #### Languages
 
 - English, Fluent
 - Serbian, Native
 
-## Education
+## :book: Education
 
 #### Singidunum University
 
-- Bachelor's degree - Business IT, Graphic Design, 2007 - 2011
+- Bachelor's degree - Business IT, Graphic Design
+-- _2007 - 2011_
 
 #### Mechanical Technical School "15. maj" Niš
 
-- Mechanical technician for computer-aided design, 2003 - 2007
+- Mechanical technician for computer-aided design
+-- _2003 - 2007_
