@@ -20,29 +20,29 @@ avatar: https://avatars.githubusercontent.com/u/5417839?v=4
 
 # Your website URL (e.g. https://forever-jekyll.github.io or https://forever-jekyll.com)
 # Used for Sitemap.xml and your RSS feed
-url: https://dsaga.github.io/blog
+url: https://dsaga.dev/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/blog"
+baseurl: "/"
 
 logo: "assets/image/dsaga-logo-m.png"
 
 # Navigation menu
 navigation_links:
   - title: Blog
-    url: /blog/
+    url: /
 
   - title: About
-    url: /blog/about
+    url: /about
 
   - title: Contact
-    url: /blog/contact
+    url: /contact
 
   - title: Search
-    url: /blog/search
+    url: /search
     icon: fa fa-search
 
 # Footer icons
