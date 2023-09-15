@@ -9,7 +9,7 @@ withPrint: true
 
 ## :large_orange_diamond: Skills
 
-:green_book: ReactJs (14+) | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
+:green_book: ReactJs | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
 :green_book: NextJs | :green_book:Express | :green_book: NodeJs |:blue_book: MySQL | :blue_book: MongoDB 
 :green_book: SASS | :green_book: LESS | :green_book: HTML5 | :orange_book: Photoshop | :orange_book: Ilustrator
 
@@ -60,7 +60,7 @@ _2014 - 2017_
 
 #### Other Experiences
 
-- ##### Web Developer / Web Developer - UpperEastDesign
+- ##### Web Developer - UpperEastDesign
 _2012 - 2013_
 
 - ##### Web Developer / Web Designer - TehnoMS
