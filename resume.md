@@ -5,7 +5,9 @@ permalink: /resume
 withPrint: true
 ---
 
-<img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin-right:20px; float:left" />
+<div id="print-header-resume"></div>
+
+<img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin-right:20px; margin-bottom:10px; float:left" />
 
 Results-driven front-end web developer with extensive experience building customized solutions 
 utilizing: React, TypeScript, JavaScript, SCSS, ES6, Nodejs. Experienced in leading small teams of 
