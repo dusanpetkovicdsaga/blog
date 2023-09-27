@@ -5,11 +5,78 @@ layout: default
 <article class="page">
   <h1>
     {{ page.title }} {%- if page.withPrint -%}
-    <button class="print-button" style="margin-left:20px;" onclick="window.print()">
+
+    <script>
+      function addPrintHeader() {
+
+        function decodeBase64(encoded) {
+          return atob(encoded);
+        }
+
+        // create a new div element for the print-only header
+        var printHeader = document.createElement("div");
+        printHeader.classList.add("print__only");
+        printHeader.classList.add("print__resumeWrap");
+
+        // create span elements for each piece of information
+        var birthSpan = document.createElement("span");
+        birthSpan.classList.add("print__birth");
+        birthSpan.textContent = decodeBase64("Mi81LzE5ODg=");
+
+        var langSpan = document.createElement("span");
+        langSpan.classList.add("print__lang");
+        langSpan.textContent = decodeBase64("U2VyYmlhbg==");
+
+        var locationSpan = document.createElement("span");
+        locationSpan.classList.add("print__location");
+        locationSpan.textContent = decodeBase64("UGFyYWNpbiwgUlM=");
+
+        var emailSpan = document.createElement("span");
+        emailSpan.classList.add("print__emailAddress");
+        emailSpan.textContent = decodeBase64("ZHVsZXNhZ2FAZ21haWwuY29t");
+
+        var phoneSpan = document.createElement("span");
+        phoneSpan.classList.add("print__phone");
+        phoneSpan.textContent = decodeBase64("KCszODEpIDYyLTg3My05Njg5");
+
+        // add the span elements to the print-only header
+        printHeader.appendChild(birthSpan);
+        printHeader.appendChild(document.createTextNode(" • "));
+        printHeader.appendChild(langSpan);
+        printHeader.appendChild(document.createTextNode(" • "));
+        printHeader.appendChild(locationSpan);
+        printHeader.appendChild(document.createTextNode(" • "));
+        printHeader.appendChild(emailSpan);
+        printHeader.appendChild(document.createTextNode(" • "));
+        printHeader.appendChild(phoneSpan);
+
+        // add the print-only header to the page
+        var printHeaderContainer = document.querySelector(
+          "#print-header-resume"
+        );
+        printHeaderContainer.appendChild(printHeader);
+
+        // add an event listener to remove the print-only header after printing
+        window.addEventListener("afterprint", function () {
+          printHeaderContainer.removeChild(printHeader);
+        });
+
+        window.print();
+      }
+    </script>
+
+    <button
+      class="print-button"
+      style="margin-left: 20px"
+      onclick="addPrintHeader()"
+    >
       <i class="fa fa-print"></i>
     </button>
 
     <style>
+      .print__only {
+        display: none;
+      }
       @media print {
         .wrapper-footer,
         .darkmode-toggle,
@@ -23,8 +90,20 @@ layout: default
           padding: 0;
           font-size: 16px;
         }
+        p {
+          margin-bottom: 0.3rem;
+        }
         #main {
           max-width: 100%;
+        }
+        .print__only {
+          display: block;
+        }
+        .print__resumeWrap {
+          padding-bottom: 1rem;
+        }
+        h1 {
+          margin: 0 0 0.8rem;
         }
       }
     </style>
