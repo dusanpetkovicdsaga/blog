@@ -16,6 +16,8 @@ developers, writing project specifications, and talking directly to clients.
 Motivated to constantly improve skills and provide value to clients working on the cutting edge 
 with focus on the front-end while maintaining full stack awareness and ability. 
 
+<div style="clear: both;"></div>
+
 ## :large_orange_diamond: Skills
 
 :green_book: ReactJs | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
