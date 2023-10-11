@@ -24,7 +24,8 @@ Why do these types of issues even arise? Did the React team do something wrong h
 
 From my perspective, I was always just using the useEffect hook the same way I would use the componentDidMount or componentDidUpdate lifecycle hooks back when class components were still a thing, just in a bit decoupled way, because with hooks, we can add as many effects as we need and separate our effects based on what they do or which state they need to update. The main problem with the way of using it I described is that useEffect is not a lifecycle hook and it's not intended to be used as one.
 
-A good basis for grasping what the useEffect hook is intended for is to just read the statement from the (https://react.dev/reference/react/useEffect)[official docs], which gives you a very good starting point in understanding how to use it:
+A good basis for grasping what the useEffect hook is intended for is to just read the statement from the 
+[official docs](https://react.dev/reference/react/useEffect), which gives you a very good starting point in understanding how to use it:
 
 - "useEffect is a React Hook that lets you synchronize a component with an external system."
 
@@ -72,7 +73,7 @@ This is a legitimate reason to use a useEffect hook, as we are basically doing w
 
 Let's say that we have an App component that needs to initially load some configuration data, such as categories for posts in the database. We only need to load this once, as these categories don't change often. A common way to implement this is:
 
-```typescript
+```tsx
 import { useState, useEffect } from 'react';
 import { fetchCategories } from './api';
 
@@ -98,7 +99,7 @@ Looking at the above code, it's not too problematic, but one of the issues we mi
 
 Here's an example of how to cancel the current request on unmount:
 
-```typescript
+```tsx
 import { useState, useEffect } from 'react';
 import { fetchCategories } from './api';
 
@@ -129,7 +130,7 @@ This approach is contradictory to the current article, but it's generally good a
 
 If we implement a popular library for making network requests like React Query, we could fetch categories in the following way:
 
-```typescript
+```tsx
 import { useQuery } from 'react-query';
 import { fetchCategories } from './api';
 
@@ -157,4 +158,4 @@ I hope that it was useful to demonstrate some common usages of useEffect and oth
 
 
 #### References
-- (https://react.dev/reference/react/useEffect)[useEffect, React Docs]
+- [useEffect, React Docs](https://react.dev/reference/react/useEffect)

@@ -280,9 +280,9 @@ code {
   font-family: $code-font-family !important;
   font-size: 0.8rem !important;
   color: #586e75;
-  border: 01px solid #dddddd;
+  // border: 01px solid #dddddd;
   border-radius: 03px;
-  background-color: #fdf6e3;
+  // background-color: #fdf6e3;
 }
 
 code {
@@ -303,11 +303,11 @@ pre {
 .highlight {
   isolation: isolate;
   border-radius: 03px;
-  background: #fdf6e3;
+  // background: #fdf6e3;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #fdf6e3;
+    // background: #fdf6e3;
   }
 }
 
