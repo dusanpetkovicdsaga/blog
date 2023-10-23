@@ -2,7 +2,6 @@
 layout: post
 title: Making network requests in React with useEffect, the correct way.
 categories: [react, hooks, en]
-draft: true
 ---
 
 What could be the consequences of using the useEffect hook incorrectly? Your whole React app could explode, that's what!!
