@@ -29,6 +29,8 @@ with focus on the front-end while maintaining full stack awareness and ability.
 #### :large_blue_diamond: Senior Frontend Software Engineer | QCerris
 _2020 – present_
 
+- Successfully led the migration of a legacy React/Webpack project to Next.js 13 to utilize server-side rendering, serving mostly pre-rendered static pages, and improving crawlability for better on-page SEO.
+
 - As part of a development team was involved in planning and architecture of a healthy food delivery platform, our team successfully built a working meal planner based a user current diet, built using the following stack: React, Java, Jenkins.
 
 - Successfully implemented a booking time slot calendar UI for a medical treatment platform using React and Redux as the front-end stack, helped the team with both the architecture of the whole booking site and platform in general.

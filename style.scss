@@ -39,7 +39,7 @@ ul, ol, dl, figure,
 .container {
   flex: 1 0 auto;
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 60rem;
   padding: 0 10px;
   width: 100%;
 }
@@ -89,7 +89,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: $purple;
+    color: $darkGray;
   }
 
   &:hover {
