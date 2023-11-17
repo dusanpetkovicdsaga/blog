@@ -9,12 +9,9 @@ withPrint: true
 
 <img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin-right:20px; margin-bottom:10px; float:left" />
 
-Results-driven front-end web developer with extensive experience building customized solutions 
-utilizing: React, TypeScript, JavaScript, SCSS, ES6, Nodejs. Experienced in leading small teams of 
-developers, writing project specifications, and talking directly to clients. 
+I am a results-driven front-end web developer with extensive experience building customized solutions utilizing React, TypeScript, JavaScript, SCSS, ES6, and Node.js. I have experience leading small teams of developers, writing project specifications, and communicating directly with clients.
 
-Motivated to constantly improve skills and provide value to clients working on the cutting edge 
-with focus on the front-end while maintaining full stack awareness and ability. 
+I am motivated to constantly improve my skills and provide value to clients by working on the cutting edge with a focus on the front-end while maintaining full-stack awareness and ability.
 
 <div style="clear: both;"></div>
 
