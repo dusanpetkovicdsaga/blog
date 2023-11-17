@@ -60,15 +60,14 @@ _2014 - 2017_
 
 - Optimized the staradvertiser.com website with millions of unique visits to load faster reducing the load on the database.
 
-- Redesigned the front-end part of a Risk Assessment SaaS web application, converting it from Angular 1 to ReactJS.
-
 - Designed a custom infrastructure to manage multiple gpsinsight.com documentation portal functionalities from a single parent theme.
 
 - Lead a project for a custom cashback service type website for businesses to advertise their offers/services.
 
-- Created a custom interface in ReactJS for a web development tool app that serves as an online development logging console
-
 #### Other Experiences
+
+- ##### Project - taglog
+    - Developed a front-end interface and a backend service with ReactJS and Nestjs for a web development tool app, serving as an online development logging console.
 
 - ##### Web Developer - UpperEastDesign
 _2012 - 2013_
