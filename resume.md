@@ -18,13 +18,20 @@ I am motivated to constantly improve my skills and provide value to clients by w
 ## :large_orange_diamond: Skills
 
 :green_book: ReactJs | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
-:green_book: NextJs | :green_book:Express | :green_book: NodeJs |:blue_book: MySQL | :blue_book: MongoDB 
+:green_book: NextJs | :green_book:Express | :green_book: NodeJs |:blue_book: MySQL | :blue_book: MongoDB
 :green_book: SASS | :green_book: LESS | :green_book: HTML5 | :orange_book: Photoshop | :orange_book: Ilustrator
 
 ## Work Experience
 
-#### :large_blue_diamond: Senior Frontend Software Engineer | QCerris
-_2020 – present_
+#### :large_blue_diamond: Senior Frontend Engineer | Santos Consulting | Contract
+
+_2023 Oct – Present_
+
+- Successfully converted an Angular 8 application to React 18, refactoring the codebase and improving maintainability and performance.
+
+#### :large_blue_diamond: Senior Frontend Engineer | QCerris
+
+_2020 – 2023 Oct_
 
 - Successfully led the migration of a legacy React/Webpack project to Next.js 13 to utilize server-side rendering, serving mostly pre-rendered static pages, and improving crawlability for better on-page SEO.
 
@@ -39,6 +46,7 @@ _2020 – present_
 - Streamlined the tracking visibility platform translation process, by implementing a full circle translation upload process using Jenkins, nodejs, firebase, etc…
 
 #### :large_blue_diamond: Frontend Software Engineer | GenEng and Biotech News
+
 _2018 - 2019_
 
 - Created a custom ReactJS interface for managing email campaigns, the interface allows full-fledged content management for email templates.
@@ -50,6 +58,7 @@ _2018 - 2019_
 - Created a ReactJS interface for organizing articles inside categories and ordering them with a drag and drop functionality.
 
 #### :large_blue_diamond: Full Stack Software Engineer | Command Media
+
 _2014 - 2017_
 
 - Improved all projects codebases by initiating code reviews amongst the team.
@@ -67,13 +76,15 @@ _2014 - 2017_
 #### Other Experiences
 
 - ##### Project - taglog
-    - Developed a front-end interface and a backend service with ReactJS and Nestjs for a web development tool app, serving as an online development logging console.
+
+  - Developed a front-end interface and a backend service with ReactJS and Nestjs for a web development tool app, serving as an online development logging console.
 
 - ##### Web Developer - UpperEastDesign
-_2012 - 2013_
+
+  _2012 - 2013_
 
 - ##### Web Developer / Web Designer - TehnoMS
-_2011 - 2012_
+  _2011 - 2012_
 
 #### Languages
 
@@ -85,9 +96,9 @@ _2011 - 2012_
 #### Singidunum University
 
 - Bachelor's degree - Business IT, Graphic Design
--- _2007 - 2011_
+  -- _2007 - 2011_
 
 #### Mechanical Technical School "15. maj" Niš
 
 - Mechanical technician for computer-aided design
--- _2003 - 2007_
+  -- _2003 - 2007_
