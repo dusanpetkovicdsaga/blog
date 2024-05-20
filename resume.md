@@ -23,6 +23,12 @@ I am motivated to constantly improve my skills and provide value to clients by w
 
 ## Work Experience
 
+#### :large_blue_diamond: Software Engineer | NCR Voyix
+
+_2024 Feb – Present_
+
+- Bulding the next gen finance platform.
+
 #### :large_blue_diamond: Senior Frontend Engineer | Santos Consulting | Contract
 
 _2023 Oct – Present_
