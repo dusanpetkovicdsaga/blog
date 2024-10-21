@@ -60,7 +60,7 @@ footer_links:
     icon: fa fa-print
 
   - title: My Github
-    url: https://github.com/dsaga
+    url: https://github.com/dusanpetkovicdsaga
     icon: fa fa-github-square
 
 # Enter your copyright text if you wish to override the default one.
@@ -86,7 +86,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Pagination
 paginate: 5
