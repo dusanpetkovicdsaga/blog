@@ -20,6 +20,8 @@ My idea originally stemmed from an old tool I used back when I was developing in
 
 Working at various companies, I've seen firsthand how essential a solid logging tool can be, whether for local debugging or resolving production issues. **TagLog** was born from this need.
 
+![Taglog.io](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwa55euml8sm6b9mcbffg.png)
+
 ### What TagLog Offers
 
 The vision for TagLog is to give developers a clean, organized interface for viewing logs from various sources. It’s designed with channels to organize logs by type, and filtering options that make narrowing down and analyzing logs a breeze.
