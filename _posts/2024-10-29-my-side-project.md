@@ -1,12 +1,15 @@
 ---
 layout: post
-title: My Side Project Journey: Building a Developer-Friendly Logging Tool
+title: My Side Project Journey - Building a Developer-Friendly Logging Tool
 categories: [taglog, sass, en]
+lang: en-US
 ---
 
 As a full-time software engineer, **I’ve always dreamed of creating something on my own**—an app that could grow and eventually sustain itself. For me, this meant developing a web application that developers could truly benefit from.
 
 The biggest challenge? Figuring out what to build. I constantly have ideas popping into my head, and while I've written down many of them, it wasn’t until recently that I found the momentum to dive into one.
+
+<!--more-->
 
 **The Journey Started Two Years Ago**  
 Actually, it wasn’t that recent. I began working on this project two years ago, only to set it aside after a few months. I’ve recently revived it, though—almost by accident. After nearly losing all the source code due to a phone mishap (and losing my 2-factor authenticator for my GitHub account), I realized it was a project worth picking back up and seeing through.
