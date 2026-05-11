@@ -23,9 +23,21 @@ I am motivated to constantly improve my skills and provide value to clients by w
 
 ## Work Experience
 
+#### :large_blue_diamond: Founder | pametnimeni.rs
+
+_2025 May – Present_
+
+- Helping restaurants and fast food joints boost orders and delight guests with AI-powered smart menus. No more scrolling—just type "nešto slatko" and get instant suggestions.
+
+#### :large_blue_diamond: Software Engineer | Candescent
+
+_2024 Oct – Present_
+
+- Working on a finance platform used by millions of people, creating a better experience for business and retail users to manage online banking.
+
 #### :large_blue_diamond: Software Engineer | NCR Voyix
 
-_2024 Feb – Present_
+_2024 Feb – 2024 Oct_
 
 - Bulding the next gen finance platform.
 
