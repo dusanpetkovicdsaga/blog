@@ -33,7 +33,7 @@ _2025 May – Present_
 
 _2024 Oct – Present_
 
-- Full-time Software Engineer (Hybrid, Belgrade, Serbia).
+- Working on a finance platform used by millions of people, creating a better experience for business and retail users to manage online banking.
 
 #### :large_blue_diamond: Software Engineer | NCR Voyix
 
