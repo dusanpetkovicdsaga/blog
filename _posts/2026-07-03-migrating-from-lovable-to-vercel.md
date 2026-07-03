@@ -4,14 +4,14 @@ title: From Lovable to Vercel - Migrating a Production SaaS Platform
 categories: [nextjs, react, migration, supabase, vercel]
 ---
 
-A comprehensive guide on migrating from Vite/React on Lovable with internal Supabase to Next.js on Vercel with a self-managed Supabase instance. This case study documents a B2B SaaS mentorship platform migration completed with **zero downtime**, **no data loss**, and **40-60% performance improvements**.
+I migrated a production SaaS mentorship platform from Lovable to Vercel with one goal in mind: improve performance and control without breaking a live product.
 
 <!--more-->
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Why We Migrated](#why-we-migrated)
+2. [Why I Migrated](#why-i-migrated)
 3. [The Challenge](#the-challenge)
 4. [Migration Architecture](#migration-architecture)
 5. [Phase-by-Phase Breakdown](#phase-by-phase-breakdown)
@@ -25,7 +25,7 @@ A comprehensive guide on migrating from Vite/React on Lovable with internal Supa
 
 ## Introduction
 
-This case study documents the migration of a B2B SaaS mentorship platform connecting industry professionals with aspiring mentees. Originally built on Lovable (formerly GPT Engineer) with Vite/React and internal Supabase integration, we successfully migrated to a production-ready stack: **Next.js on Vercel with a self-managed Supabase instance**.
+In this case study, I document how I migrated a B2B SaaS mentorship platform that connects industry professionals with aspiring mentees. It was originally built on Lovable (formerly GPT Engineer) with Vite/React and internal Supabase integration, and I moved it to a production-ready stack: **Next.js on Vercel with a self-managed Supabase instance**.
 
 This migration was completed with **zero downtime**, **no data loss**, and resulted in **40-60% performance improvements**.
 
@@ -50,11 +50,11 @@ This migration was completed with **zero downtime**, **no data loss**, and resul
 
 ---
 
-## Why We Migrated
+## Why I Migrated
 
 ### 1. **Performance & SEO Limitations**
 
-Lovable is excellent for rapid prototyping, but for a production SaaS platform we needed:
+Lovable is excellent for rapid prototyping, but for this production SaaS platform I needed:
 
 - Server-Side Rendering (SSR) for better SEO
 - Edge deployment for global performance
@@ -184,7 +184,7 @@ sequenceDiagram
 
 ### Phase 1: Assessment & Planning (2 days)
 
-#### What We Analyzed
+#### What I Analyzed
 
 1. **Dependency Audit**
 
@@ -216,7 +216,7 @@ sequenceDiagram
 
 #### Deliverable: Migration Strategy Document
 
-We created a comprehensive strategy with 3 possible approaches:
+I created a comprehensive strategy with 3 possible approaches:
 
 1. **Fix existing migrations** (keep history)
 2. **Clean schema dump** (fresh start) ✅ Chosen
@@ -226,7 +226,7 @@ We created a comprehensive strategy with 3 possible approaches:
 
 ### Phase 2: Supabase Database Migration (2 days)
 
-This was the most critical phase. Here's how we solved it:
+This was the most critical phase. Here's how I solved it:
 
 #### Step 1: Create New Supabase Instance
 
@@ -241,7 +241,7 @@ This was the most critical phase. Here's how we solved it:
 
 #### Step 2: Export Existing Schema (Clean Approach)
 
-Since we couldn't use CLI to access the old database, we used the Supabase Dashboard:
+Since I couldn't use CLI access for the old database, I used the Supabase Dashboard:
 
 ```sql
 -- Exported schema manually via SQL Editor
@@ -264,7 +264,7 @@ $$ LANGUAGE plpgsql;
 
 #### Step 3: Data Migration Strategy
 
-We exported data as CSV files from the old Supabase Dashboard:
+I exported data as CSV files from the old Supabase Dashboard:
 
 ```bash
 # Critical: Disable triggers before import!
@@ -617,7 +617,7 @@ app/
 
 ### Phase 5: Edge Functions Migration (3 days)
 
-We migrated most Supabase Edge Functions to Next.js API Routes, keeping only Stripe-related functions on Supabase for webhook handling. While the old Edge Functions still exist on Supabase, they are no longer in use.
+I migrated most Supabase Edge Functions to Next.js API Routes, keeping only Stripe-related functions on Supabase for webhook handling. While the old Edge Functions still exist on Supabase, they are no longer in use.
 
 #### Example: Migrating Email Function
 
@@ -719,7 +719,7 @@ Out of 12 original Supabase Edge Functions:
 
 #### The Frozen Account Problem
 
-During testing, we discovered users with `payment_failed` status were being logged out, preventing them from updating their payment method!
+During testing, I discovered users with `payment_failed` status were being logged out, preventing them from updating their payment method!
 
 **Problem Flow:**
 
@@ -1386,7 +1386,7 @@ export function measurePerformance(metricName: string, callback: () => void) {
    - Implement visual regression testing
 
 3. **Migrate Edge Functions Earlier**
-   - We could have migrated Edge Functions in parallel with component migration
+  - I could have migrated Edge Functions in parallel with component migration
    - Earlier migration would have unified the codebase sooner
 
 4. **Better Rollback Planning**
