@@ -2,27 +2,172 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
+<div class="home-page">
+  <section class="home-panel" id="work-with-me">
+    <div class="hero-grid">
+      <div>
+        <div class="section-label">I help founders</div>
+        <h1 class="hero-title">You built your product with AI. I’ll help you make sure it doesn’t become a problem.</h1>
 
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="hero-copy">
+          <p>AI tools move fast. But as your product grows, you need a seasoned engineer who looks at the big picture, protects the foundation, and helps you scale with confidence.</p>
+          <p>I audit, harden and maintain AI-built applications so you can focus on your customers.</p>
+        </div>
 
-    <div class="entry">
-      {% if post.content contains '<!--more-->' %}
+        <div class="hero-actions">
+          <a class="button-primary" href="{{ site.baseurl }}/contact/">Let’s look at your application</a>
+          <a class="button-secondary" href="#how-i-work">See how I work ↓</a>
+        </div>
+      </div>
 
-      {{ post.excerpt }}
+      <div class="hero-card" aria-label="Profile card">
+        <div class="hero-portrait">
+          <div class="hero-portrait__avatar">DP</div>
+          <div class="hero-portrait__badge">
+            <strong>Dusan Petkovic</strong>
+            <span>Senior Software Engineer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      {% else %}
+  <section class="info-section" id="what-i-do">
+    <div class="section-grid info-columns">
+      <div class="process-lead">
+        <div class="section-label">What I do</div>
+        <h2 class="section-heading">How I can help</h2>
+        <p class="section-copy">Practical engineering support for AI-built products at any stage.</p>
+      </div>
 
-      {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+      <div class="service-list">
+        <article class="service-item">
+          <i class="service-icon fa fa-search" aria-hidden="true"></i>
+          <div>
+            <h3 class="service-title">Production Audit</h3>
+            <p class="service-text">I go deep into your codebase, architecture and infrastructure to find the risks that will slow you down or bite you later.</p>
+          </div>
+        </article>
 
-      {% endif %}
+        <article class="service-item">
+          <i class="service-icon fa fa-wrench" aria-hidden="true"></i>
+          <div>
+            <h3 class="service-title">Production Hardening</h3>
+            <p class="service-text">I fix the important issues and improve the foundation without unnecessary rewrites.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <i class="service-icon fa fa-users" aria-hidden="true"></i>
+          <div>
+            <h3 class="service-title">Ongoing Engineering</h3>
+            <p class="service-text">I become your technical partner and take ownership of the engineering side of your product.</p>
+          </div>
+        </article>
+
+        <a class="section-link" href="{{ site.baseurl }}/about/">Learn more about how I work →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section" id="how-i-work">
+    <div class="section-grid">
+      <div class="process-lead">
+        <div class="section-label">My process</div>
+        <h2 class="section-heading">How I work</h2>
+        <p class="section-copy">Simple, transparent and focused on results.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <span class="process-step__index">01</span>
+          <h3 class="process-step__title">Understand</h3>
+          <p class="process-step__text">We talk about your product, goals and biggest technical challenges.</p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__index">02</span>
+          <h3 class="process-step__title">Audit</h3>
+          <p class="process-step__text">I analyze the application and identify risks and opportunities.</p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__index">03</span>
+          <h3 class="process-step__title">Prioritize</h3>
+          <p class="process-step__text">We align on what matters most and create a plan with clear impact.</p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__index">04</span>
+          <h3 class="process-step__title">Execute</h3>
+          <p class="process-step__text">I improve the system iteratively with regular updates and feedback.</p>
+        </article>
+
+        <article class="process-step">
+          <span class="process-step__index">05</span>
+          <h3 class="process-step__title">Partner</h3>
+          <p class="process-step__text">I keep the product healthy and help it scale with confidence.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="audits-section" id="audits">
+    <div class="section-grid">
+      <div class="audit-intro">
+        <div class="section-label">Recent audits</div>
+        <h2 class="section-heading">Recent audits</h2>
+        <p class="section-copy">Public teardowns of AI-built products. Real issues. Real recommendations.</p>
+        <a class="section-link" href="{{ site.baseurl }}/audits/">See all audits →</a>
+      </div>
+
+      <div class="audit-grid">
+        <article class="audit-card">
+          <div class="audit-card__thumb"></div>
+          <div class="audit-card__body">
+            <h3 class="audit-card__title">AI Mentorship Platform</h3>
+            <p class="audit-card__text">Auth, data modeling and performance issues that would break at scale.</p>
+            <a class="audit-card__link" href="{{ site.baseurl }}/audits/ai-mentorship-platform/">Read audit →</a>
+          </div>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-card__thumb audit-card__thumb--light"></div>
+          <div class="audit-card__body">
+            <h3 class="audit-card__title">SaaS Dashboard</h3>
+            <p class="audit-card__text">Crispy complex client code and missing guardrails.</p>
+            <a class="audit-card__link" href="{{ site.baseurl }}/audits/saas-dashboard/">Read audit →</a>
+          </div>
+        </article>
+
+        <article class="audit-card">
+          <div class="audit-card__thumb audit-card__thumb--code"></div>
+          <div class="audit-card__body">
+            <h3 class="audit-card__title">AI Content Tool</h3>
+            <p class="audit-card__text">Security gaps, secrets in client code and more.</p>
+            <a class="audit-card__link" href="{{ site.baseurl }}/audits/ai-content-tool/">Read audit →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-card" aria-label="Testimonial">
+    <p class="testimonial-card__quote">Dusan took over our Lovable-built SaaS when it started to fall apart under its own complexity. He quickly understood the system, fixed critical issues, and gave us confidence to scale. Now he’s our go-to engineer for everything.</p>
+
+    <div class="testimonial-card__meta">
+      <div class="testimonial-card__avatar" aria-hidden="true"></div>
+      <div class="testimonial-card__name">Founder</div>
+      <div class="testimonial-card__role">SaaS / 5K+ users</div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contact">
+    <div>
+      <h2 class="cta-band__title">Don’t let technical debt slow you down.</h2>
+      <p class="cta-band__text">Book a free 20-minute call and get clarity on the next best steps for your product.</p>
     </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more&nbsp;&#183;{% include read-time.html content=post.content %}</a>
-  </article>
-  {% endfor %}
-
-  {% include pagination.html %}
+    <a class="button-primary" href="{{ site.baseurl }}/contact/">Book a free 20-minute call</a>
+  </section>
 </div>

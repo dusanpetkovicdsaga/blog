@@ -1,3 +1,9 @@
 {% for item in site.navigation_links %}
-  <a class="nav-menu-item{% if page.url == item.url %} active{% endif %}" href="{{ item.url }}">{% if item.icon %}<i class="{{ item.icon }}"></i>{% else %}{{ item.title }}{% endif %}</a>
+  {% assign item_path = item.url | split: '#' | first %}
+  {% if item.url contains '://' %}
+    {% assign href = item.url %}
+  {% else %}
+    {% assign href = item.url | relative_url %}
+  {% endif %}
+  <a class="nav-menu-item{% if page.url == item_path or page.url == item.url %} active{% endif %}" href="{{ href }}">{% if item.icon %}<i class="{{ item.icon }}"></i>{% else %}{{ item.title }}{% endif %}</a>
 {% endfor %}

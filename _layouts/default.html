@@ -35,73 +35,69 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar">
+    <div class="site-shell">
+      <header class="site-header">
+        <a href="{{ site.baseurl }}/" class="site-brand" aria-label="Go to home">
+          <span class="site-brand-mark">
             {% if site.logo %}
-            <img src="{{ site.baseurl }}/{{ site.logo }}" width="70" height="70" />
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="" width="44" height="44" />
             {% else %}
-            <img src="{{ site.avatar }}" width="70" height="70" />
+            <img src="{{ site.avatar }}" alt="" width="44" height="44" />
             {% endif %}
-          </a>
+          </span>
+          <span class="site-brand-copy">
+            <span class="site-brand-name">{{ site.title }}</span>
+            <span class="site-brand-role">Senior Software Engineer</span>
+          </span>
+        </a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+        <nav class="site-nav" aria-label="Main navigation">
+          {% include navigation.html %}
+        </nav>
+      </header>
 
-          <nav class="nav-menu">
-            {% include navigation.html %}
-          </nav>
-        </header>
-      </div>
-    </div>
+      <main id="main" role="main" class="site-main">
+        {{ content }}
+      </main>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+      <footer class="site-footer">
+        <a href="{{ site.baseurl }}/" class="site-brand site-brand--footer" aria-label="Go to home">
+          <span class="site-brand-mark">
+            {% if site.logo %}
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="" width="44" height="44" />
+            {% else %}
+            <img src="{{ site.avatar }}" alt="" width="44" height="44" />
+            {% endif %}
+          </span>
+          <span class="site-brand-copy">
+            <span class="site-brand-name">{{ site.title }}</span>
+            <span class="site-brand-role">Senior Software Engineer</span>
+          </span>
+        </a>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {%- if site.footer_links -%}
-          <div class="social-icons">
-            {%- for footer_link in site.footer_links -%}
-            {%- if footer_link.url contains "://" -%}
-            {%- assign url = footer_link.url -%}
-            {%- else -%}
-            {%- assign url = footer_link.url | relative_url -%}
-            {%- endif -%}
-            <a class="social-icon" href="{{ url }}"><i class="{{ footer_link.icon | default: 'fa fa-link' }} fa-2x" title="{{ footer_link.title }}"></i></a>
-            {%- endfor -%}
-          </div>
+        <nav class="site-footer-nav" aria-label="Footer navigation">
+          {% include navigation.html %}
+        </nav>
+
+        {%- if site.footer_links -%}
+        <div class="site-footer-social">
+          {%- for footer_link in site.footer_links -%}
+          {%- if footer_link.url contains "://" -%}
+          {%- assign url = footer_link.url -%}
+          {%- else -%}
+          {%- assign url = footer_link.url | relative_url -%}
           {%- endif -%}
-
-          <div class="copyright">
-            {% if site.copyright %}
-            {{ site.copyright | markdownify }}
-            {% else %}
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: site.title }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/forever-jekyll/forever-jekyll" rel="nofollow">Forever Jekyll</a>.</p>
-            {% endif %}
-          </div>
-        </footer>
-      </div>
+          <a class="social-icon" href="{{ url }}" aria-label="{{ footer_link.title }}"><i class="{{ footer_link.icon | default: 'fa fa-link' }}" aria-hidden="true"></i></a>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </footer>
     </div>
 
     <script defer src="https://cdn.plyr.io/3.6.5/plyr.js"></script>
     <script>
       const player = new Plyr("#player", { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1 , enablejsapi: 1, autoplay: 0, focused: true, global: false });
       window.player = player;
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-          touchNavigation: true,
-          loop: true,
-          autoplayVideos: true
-      });
     </script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -116,19 +112,6 @@
                     { left: '\\[', right: '\\]', display: true  },
                     { left: '\\(', right: '\\)', display: false }
                     ]});">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-      function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-        window.addEventListener('load', addDarkmodeWidget);
-      }
-      const options = {
-        label: '🌓',
-      }
-      const darkmode = new Darkmode(options);
-            darkmode.showWidget();
     </script>
   </body>
 </html>
