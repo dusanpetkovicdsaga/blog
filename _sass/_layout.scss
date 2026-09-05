@@ -18,7 +18,7 @@ button { cursor: pointer; }
 .site-brand:hover { color: #111; text-decoration: none; }
 .site-brand-mark { display: flex; width: 50px; height: 50px; flex: 0 0 50px; border: 1px solid #e8e8e8; border-radius: 50%; overflow: hidden; }
 .site-brand-mark img { width: 100%; height: 100%; object-fit: contain; }
-.site-brand-copy { display: grid; gap: 3px; }
+.site-brand-copy { display: grid; gap: 3px; text-align: left; }
 .site-brand-name { font-size: 16px; font-weight: 750; }
 .site-brand-role { font-size: 13px; color: #444; }
 .site-nav,.site-footer-nav { display: flex; flex-wrap: wrap; gap: 34px; align-items: center; }
