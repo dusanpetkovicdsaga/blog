@@ -6,7 +6,7 @@ permalink: /about/
 <div class="about-page">
   <section class="hero-grid about-hero">
     <div><div class="section-label">About me</div><h1>I’m Dušan, a software engineer who enjoys solving complex problems and helping founders ship better software.</h1><p>I’ve been building web applications for over 15 years. I care about clean architecture, readable code and systems that are easy to change as a product grows.</p><p>Today I help founders who built with AI take their products to the next level—fixing technical debt, improving architecture and making sure the foundation is solid for long-term growth.</p></div>
-    <img class="portrait" src="{{ '/assets/image/dusan-portrait.png' | relative_url }}" alt="Dušan Petković" width="1145" height="1374" fetchpriority="high">
+    <img class="portrait" src="{{ '/assets/image/dusan-about.png' | relative_url }}" alt="Dušan Petković" width="1145" height="1374" fetchpriority="high">
   </section>
   <section class="background-grid">
     <div><div class="section-label">My background</div><h2>15+ years of building and maintaining production software.</h2><a class="text-link" href="{{ '/resume/' | relative_url }}">View my full resume →</a></div>
