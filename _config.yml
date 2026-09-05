@@ -6,7 +6,7 @@
 lang: "en"
 
 # Name of your site (displayed in the header)
-title: Dusan Petkovic
+title: Dušan Petković
 
 # Short bio or description (displayed in the header)
 description: "Senior Software Engineer"
@@ -42,28 +42,22 @@ navigation_links:
     url: /archive/
 
   - title: About
-    url: /about
+    url: /about/
 
   - title: Contact
-    url: /contact
+    url: /contact/
 
 # Footer icons
 footer_links:
+  - title: GitHub
+    url: https://github.com/dusanpetkovicdsaga
+    icon: fa fa-github
   - title: LinkedIn
     url: https://www.linkedin.com/in/dusan-petkovic-5116b570/
     icon: fa fa-linkedin-square
-
-  - title: Resume / CV
-    url: /resume
-    icon: fa fa-print
-
-  - title: My Github
-    url: https://github.com/dusanpetkovicdsaga
-    icon: fa fa-github-square
-
-  - title: Feed
-    url: feed.xml
-    icon: fa fa-rss-square
+  - title: Email
+    url: mailto:dulesaga@gmail.com
+    icon: fa fa-envelope-o
 
 # Enter your copyright text if you wish to override the default one.
 #copyright: "This site is made with <3 by *me, myself, and I*."

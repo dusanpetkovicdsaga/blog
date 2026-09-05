@@ -1,0 +1,24 @@
+- title: AI Mentorship Platform
+  platform: Lovable
+  url: /audits/ai-mentorship-platform/
+  image: /assets/image/audit-code.svg
+  summary: Auth, data modeling and performance risks to investigate before scaling.
+  intro: A mentorship platform built with Lovable.
+- title: SaaS Dashboard
+  platform: Bolt
+  url: /audits/saas-dashboard/
+  image: /assets/image/audit-dashboard.svg
+  summary: Data consistency, API design and missing guardrails are the focus of this example review.
+  intro: An internal dashboard built with Bolt.
+- title: AI Content Tool
+  platform: Replit
+  url: /audits/ai-content-tool/
+  image: /assets/image/audit-security.svg
+  summary: Security, secrets handling and infrastructure to review before scaling.
+  intro: A content generation tool built with Replit.
+- title: Subscription SaaS Starter
+  platform: Lovable
+  url: /audits/subscription-saas-starter/
+  image: /assets/image/audit-architecture.svg
+  summary: Tenant boundaries, permissions and billing integration are the focus of this example review.
+  intro: A starter kit for a subscription SaaS.

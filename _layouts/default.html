@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/ress/dist/ress.min.css"/>
+
     <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/assets/image/favicon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/assets/image/favicon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/assets/image/favicon-72x72.png">
@@ -38,6 +38,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="site-shell">
       <header class="site-header">
         <a href="{{ site.baseurl }}/" class="site-brand" aria-label="Go to home">
@@ -85,7 +86,7 @@
         {%- if site.footer_links -%}
         <div class="site-footer-social">
           {%- for footer_link in site.footer_links -%}
-          {%- if footer_link.url contains "://" -%}
+          {%- if footer_link.url contains ":" -%}
           {%- assign url = footer_link.url -%}
           {%- else -%}
           {%- assign url = footer_link.url | relative_url -%}
@@ -99,12 +100,15 @@
 
     <script defer src="https://cdn.plyr.io/3.6.5/plyr.js"></script>
     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!window.Plyr || !document.querySelector("#player")) return;
       const player = new Plyr("#player", { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1, playsinline: 1 , enablejsapi: 1, autoplay: 0, focused: true, global: false });
       window.player = player;
+    });
     </script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>document.addEventListener("DOMContentLoaded", () => { if (window.mermaid) mermaid.initialize({startOnLoad:true}); });</script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js" integrity="sha384-GxNFqL3r9uRJQhR+47eDxuPoNE7yLftQM8LcxzgS4HT73tp970WS/wV5p8UzCOmb" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"

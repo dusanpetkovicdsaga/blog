@@ -3,37 +3,25 @@ layout: default
 title: Audits
 permalink: /audits/
 ---
-
-<section class="page-shell">
-  <article class="page">
-    <div class="section-label">Placeholder audits</div>
+<div class="listing-page">
+  <header class="listing-heading">
     <h1>Audits</h1>
-    <p>These are temporary placeholders for the public audit pages. Replace them with the real case studies when you connect the content.</p>
-
-    <div class="audit-grid">
-      <article class="audit-card">
-        <div class="audit-card__thumb"></div>
-        <div class="audit-card__body">
-          <h2 class="audit-card__title"><a href="{{ site.baseurl }}/audits/ai-mentorship-platform/">AI Mentorship Platform</a></h2>
-          <p class="audit-card__text">Placeholder audit content for the future write-up.</p>
-        </div>
-      </article>
-
-      <article class="audit-card">
-        <div class="audit-card__thumb audit-card__thumb--light"></div>
-        <div class="audit-card__body">
-          <h2 class="audit-card__title"><a href="{{ site.baseurl }}/audits/saas-dashboard/">SaaS Dashboard</a></h2>
-          <p class="audit-card__text">Placeholder audit content for the future write-up.</p>
-        </div>
-      </article>
-
-      <article class="audit-card">
-        <div class="audit-card__thumb audit-card__thumb--code"></div>
-        <div class="audit-card__body">
-          <h2 class="audit-card__title"><a href="{{ site.baseurl }}/audits/ai-content-tool/">AI Content Tool</a></h2>
-          <p class="audit-card__text">Placeholder audit content for the future write-up.</p>
-        </div>
-      </article>
-    </div>
-  </article>
-</section>
+    <p>I publicly audit AI-built products and early stage apps.<br>Real issues. Honest feedback. Actionable recommendations.</p>
+    <p class="placeholder-note">Example audits below are placeholders. Real reviews are coming soon.</p>
+  </header>
+  <div class="article-list">
+    {% for audit in site.data.audits %}
+    <article class="article-row">
+      <a href="{{ audit.url | relative_url }}" tabindex="-1" aria-hidden="true"><img class="article-image" src="{{ audit.image | relative_url }}" alt="" width="600" height="380" loading="lazy"></a>
+      <div>
+        <p class="article-meta">Preview · AI-built app ({{ audit.platform }})</p>
+        <h2><a href="{{ audit.url | relative_url }}">{{ audit.title }}</a></h2>
+        <p>{{ audit.intro }}</p><p>{{ audit.summary }}</p>
+        <a class="text-link" href="{{ audit.url | relative_url }}">Preview audit →</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="coming-soon">More audits coming soon.</p>
+  <section class="cta-band"><div><h2 class="cta-band__title">Want me to audit<br>your application?</h2><p class="cta-band__text">Book a free 20-minute call and I’ll take a look.</p></div><a class="button-primary" href="{{ '/contact/' | relative_url }}">Book a free 20-minute call →</a></section>
+</div>

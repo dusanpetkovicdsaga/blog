@@ -1,7 +1,7 @@
 ---
 layout: page
-title: AI Mentorship Platform
-permalink: /audits/ai-mentorship-platform/
+title: Subscription SaaS Starter
+permalink: /audits/subscription-saas-starter/
 ---
 
 **Placeholder audit · real review coming soon**
@@ -10,7 +10,7 @@ This example reserves a place for an upcoming public audit. It does not describe
 
 ## Planned review scope
 
-The review will examine authentication, data modeling and performance, alongside the application’s architecture and operational readiness.
+The review will examine tenant isolation, permissions and billing, alongside the application’s architecture and operational readiness.
 
 ## What the published audit will include
 

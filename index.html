@@ -7,7 +7,7 @@ layout: default
     <div class="hero-grid">
       <div>
         <div class="section-label">I help founders</div>
-        <h1 class="hero-title">You built your product with AI. I’ll help you make sure it doesn’t become a problem.</h1>
+        <h1 class="hero-title">You built your product<br>with AI.<br>I’ll help you make sure it doesn’t become a problem.</h1>
 
         <div class="hero-copy">
           <p>AI tools move fast. But as your product grows, you need a seasoned engineer who looks at the big picture, protects the foundation, and helps you scale with confidence.</p>
@@ -20,15 +20,7 @@ layout: default
         </div>
       </div>
 
-      <div class="hero-card" aria-label="Profile card">
-        <div class="hero-portrait">
-          <div class="hero-portrait__avatar">DP</div>
-          <div class="hero-portrait__badge">
-            <strong>Dusan Petkovic</strong>
-            <span>Senior Software Engineer</span>
-          </div>
-        </div>
-      </div>
+      <img class="portrait" src="{{ '/assets/image/dusan-portrait.png' | relative_url }}" alt="Dušan Petković" width="1145" height="1374" fetchpriority="high">
     </div>
   </section>
 
@@ -117,42 +109,27 @@ layout: default
       <div class="audit-intro">
         <div class="section-label">Recent audits</div>
         <h2 class="section-heading">Recent audits</h2>
-        <p class="section-copy">Public teardowns of AI-built products. Real issues. Real recommendations.</p>
+        <p class="section-copy">Public teardowns of AI-built products. Preview the upcoming audits below.</p>
         <a class="section-link" href="{{ site.baseurl }}/audits/">See all audits →</a>
       </div>
 
       <div class="audit-grid">
+        {% for audit in site.data.audits limit:3 %}
         <article class="audit-card">
-          <div class="audit-card__thumb"></div>
+          <img src="{{ audit.image | relative_url }}" alt="" class="audit-image" loading="lazy" width="600" height="380">
           <div class="audit-card__body">
-            <h3 class="audit-card__title">AI Mentorship Platform</h3>
-            <p class="audit-card__text">Auth, data modeling and performance issues that would break at scale.</p>
-            <a class="audit-card__link" href="{{ site.baseurl }}/audits/ai-mentorship-platform/">Read audit →</a>
+            <h3 class="audit-card__title">{{ audit.title }}<br><small>(Built with {{ audit.platform }})</small></h3>
+            <p class="audit-card__text">{{ audit.summary }}</p>
+            <a class="audit-card__link" href="{{ audit.url | relative_url }}">Preview audit →</a>
           </div>
         </article>
-
-        <article class="audit-card">
-          <div class="audit-card__thumb audit-card__thumb--light"></div>
-          <div class="audit-card__body">
-            <h3 class="audit-card__title">SaaS Dashboard</h3>
-            <p class="audit-card__text">Crispy complex client code and missing guardrails.</p>
-            <a class="audit-card__link" href="{{ site.baseurl }}/audits/saas-dashboard/">Read audit →</a>
-          </div>
-        </article>
-
-        <article class="audit-card">
-          <div class="audit-card__thumb audit-card__thumb--code"></div>
-          <div class="audit-card__body">
-            <h3 class="audit-card__title">AI Content Tool</h3>
-            <p class="audit-card__text">Security gaps, secrets in client code and more.</p>
-            <a class="audit-card__link" href="{{ site.baseurl }}/audits/ai-content-tool/">Read audit →</a>
-          </div>
-        </article>
+        {% endfor %}
       </div>
     </div>
   </section>
 
-  <section class="testimonial-card" aria-label="Testimonial">
+  <section class="testimonial-card" aria-label="Placeholder testimonial">
+    <span class="section-label testimonial-placeholder">Sample testimonial · placeholder</span>
     <p class="testimonial-card__quote">Dusan took over our Lovable-built SaaS when it started to fall apart under its own complexity. He quickly understood the system, fixed critical issues, and gave us confidence to scale. Now he’s our go-to engineer for everything.</p>
 
     <div class="testimonial-card__meta">
