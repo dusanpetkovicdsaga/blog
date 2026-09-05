@@ -9,7 +9,7 @@ permalink: /about/
     <img class="portrait" src="{{ '/assets/image/dusan-portrait.png' | relative_url }}" alt="Dušan Petković" width="1145" height="1374" fetchpriority="high">
   </section>
   <section class="background-grid">
-    <div><div class="section-label">My background</div><h2>15+ years of building and maintaining production software.</h2><a class="text-link" href="{{ '/resume' | relative_url }}">View my full resume →</a></div>
+    <div><div class="section-label">My background</div><h2>15+ years of building and maintaining production software.</h2><a class="text-link" href="{{ '/resume/' | relative_url }}">View my full resume →</a></div>
     <article><i class="fa fa-calendar-check-o" aria-hidden="true"></i><h3>15+</h3><p>Years of experience</p><p>I’ve worked with startups, product companies and enterprises across different domains.</p></article>
     <article><i class="fa fa-code" aria-hidden="true"></i><h3>Full-stack</h3><p>JavaScript/TypeScript</p><p>React, Node.js, NestJS, databases, APIs, cloud, CI/CD.</p></article>
     <article><i class="fa fa-users" aria-hidden="true"></i><h3>From 0 to scale</h3><p>Hands-on experience</p><p>I’ve built products from scratch and helped scale applications that already have users.</p></article>

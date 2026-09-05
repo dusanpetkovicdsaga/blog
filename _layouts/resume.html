@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="resume-page">
+  <section class="hero-grid about-hero resume-hero">
+    <img class="portrait" src="{{ site.avatar }}" alt="Dušan Petković" width="495" height="495" fetchpriority="high">
+    <div>
+      <div class="section-label">Résumé</div>
+      <h1>Dušan Petković</h1>
+      <p class="resume-role">Senior Software Engineer</p>
+      <p>I am a results-driven front-end web developer with extensive experience building customized solutions utilizing React, TypeScript, JavaScript, SCSS, ES6, and Node.js. I have experience leading small teams of developers, writing project specifications, and communicating directly with clients.</p>
+      <p>I am motivated to constantly improve my skills and provide value to clients by working on the cutting edge with a focus on the front-end while maintaining full-stack awareness and ability.</p>
+      <div class="hero-actions"><a class="button-primary" href="{{ '/contact/' | relative_url }}">Let’s work together →</a><button type="button" class="resume-print button-secondary" onclick="window.print()">Print résumé <i class="fa fa-print" aria-hidden="true"></i></button></div>
+    </div>
+  </section>
+  <article class="resume-content" aria-label="Professional experience and education">{{ content }}</article>
+</div>
