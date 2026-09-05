@@ -6,10 +6,10 @@
 lang: "en"
 
 # Name of your site (displayed in the header)
-title: Dusan's Blog
+title: Dušan Petković
 
 # Short bio or description (displayed in the header)
-description: "A blog about software development and other stuff"
+description: "Senior Software Engineer"
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/5417839?v=4
@@ -30,38 +30,39 @@ baseurl: "/blog"
 
 logo: "assets/image/dsaga-logo-m.png"
 
+booking_url: https://calendar.app.google/F8ifUa5jVEeHPwiB9
+
 # Navigation menu
 navigation_links:
-  - title: Blog
+  - title: Work with me
     url: /
 
+  - title: Audits
+    url: /audits/
+
+  - title: Blog
+    url: /archive/
+
   - title: About
-    url: /about
+    url: /about/
+
+  - title: Resume
+    url: /resume/
 
   - title: Contact
-    url: /contact
-
-  - title: Search
-    url: /search
-    icon: fa fa-search
+    url: /contact/
 
 # Footer icons
 footer_links:
-  - title: Feed
-    url: feed.xml
-    icon: fa fa-rss-square
-
+  - title: GitHub
+    url: https://github.com/dusanpetkovicdsaga
+    icon: fa fa-github
   - title: LinkedIn
     url: https://www.linkedin.com/in/dusan-petkovic-5116b570/
     icon: fa fa-linkedin-square
-
-  - title: Resume / CV
-    url: /resume
-    icon: fa fa-print
-
-  - title: My Github
-    url: https://github.com/dusanpetkovicdsaga
-    icon: fa fa-github-square
+  - title: Email
+    url: mailto:dulesaga@gmail.com
+    icon: fa fa-envelope-o
 
 # Enter your copyright text if you wish to override the default one.
 #copyright: "This site is made with <3 by *me, myself, and I*."

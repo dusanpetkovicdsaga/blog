@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/migration.png
+image_alt: A SaaS application moving from a prototype to a modular production architecture.
 title: From Lovable to Vercel - Migrating a Production SaaS Platform
 categories: [nextjs, react, migration, supabase, vercel]
 ---

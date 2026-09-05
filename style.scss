@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: $white;
+  background: #fff;
   color: $darkGray;
   display: flex;
   min-height: 100vh;
@@ -541,6 +541,8 @@ a.nav-menu-item:focus {
 .clearfix:after {
   clear: both;
   }
+
+@import "layout";
 
 //
 // .main

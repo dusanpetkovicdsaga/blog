@@ -1,9 +1,13 @@
 ---
 layout: page
-title: Contact Me
-permalink: /contact
+title: Let’s talk about your product
+permalink: /contact/
 ---
 
-If you're interested in working with me on a potential project or have any other inquiries, please don't hesitate to reach out to me through my LinkedIn profile. I'm always happy to chat and discuss potential opportunities.
+Book a free 20-minute introductory call. Choose a time that works for you and tell me a little about your application and what you need help with.
 
-<iframe src="/embed/badge" rel="nofollow" width="100%" height="500px"></iframe>
+[Book a free 20-minute call]({{ site.booking_url }}){: .button-primary}
+
+Prefer email? [Email me](mailto:dulesaga@gmail.com).
+
+Or [connect with me on LinkedIn](https://www.linkedin.com/in/dusan-petkovic-5116b570/).

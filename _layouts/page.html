@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div class="page-shell">
 <article class="page">
   <h1>
     {{ page.title }} {%- if page.withPrint -%}
@@ -79,10 +80,10 @@ layout: default
       }
       @media print {
         .wrapper-footer,
-        .darkmode-toggle,
         .print-button,
         .darkmode-layer,
-        .wrapper-masthead {
+        .site-header,
+        .site-footer {
           display: none;
         }
         html {
@@ -115,3 +116,4 @@ layout: default
 
   <div class="entry">{{ content }}</div>
 </article>
+</div>

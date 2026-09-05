@@ -1,59 +1,49 @@
 ---
-layout: page
-title: Dušan Petković
-permalink: /resume
-withPrint: true
+layout: resume
+title: Resume
+permalink: /resume/
 ---
 
-<div id="print-header-resume"></div>
+## Skills
 
-<img src="{{ site.avatar }}" alt="Me" width="120" height="120" style="margin-right:20px; margin-bottom:10px; float:left" />
-
-I am a results-driven front-end web developer with extensive experience building customized solutions utilizing React, TypeScript, JavaScript, SCSS, ES6, and Node.js. I have experience leading small teams of developers, writing project specifications, and communicating directly with clients.
-
-I am motivated to constantly improve my skills and provide value to clients by working on the cutting edge with a focus on the front-end while maintaining full-stack awareness and ability.
-
-<div style="clear: both;"></div>
-
-## :large_orange_diamond: Skills
-
-:green_book: ReactJs | :green_book: TypeScript | :green_book: JavaScript | :green_book: ES6 | :green_book: NestJs
-:green_book: NextJs | :green_book:Express | :green_book: NodeJs |:blue_book: MySQL | :blue_book: MongoDB
-:green_book: SASS | :green_book: LESS | :green_book: HTML5 | :orange_book: Photoshop | :orange_book: Ilustrator
+<div class="tech-tags resume-skills">
+{% assign skills = 'React,TypeScript,JavaScript,ES6,NestJS,Next.js,Express,Node.js,MySQL,MongoDB,SASS,LESS,HTML5,Photoshop,Illustrator' | split: ',' %}
+{% for skill in skills %}<span>{{ skill }}</span>{% endfor %}
+</div>
 
 ## Work Experience
 
-#### :large_blue_diamond: Founder | pametnimeni.rs
+### Founder | pametnimeni.rs
 
 _2025 May – Present_
 
 - Helping restaurants and fast food joints boost orders and delight guests with AI-powered smart menus. No more scrolling—just type "nešto slatko" and get instant suggestions.
 
-#### :large_blue_diamond: Software Engineer | Candescent
+### Software Engineer | Candescent
 
 _2024 Oct – Present_
 
 - Working on a finance platform used by millions of people, creating a better experience for business and retail users to manage online banking.
 
-#### :large_blue_diamond: Software Engineer | NCR Voyix
+### Software Engineer | NCR Voyix
 
 _2024 Feb – 2024 Oct_
 
-- Bulding the next gen finance platform.
+- Building the next gen finance platform.
 
-#### :large_blue_diamond: Senior Frontend Engineer | Santos Consulting | Contract
+### Senior Frontend Engineer | Santos Consulting | Contract
 
 _2023 Oct – Present_
 
 - Successfully converted an Angular 8 application to React 18, refactoring the codebase and improving maintainability and performance.
 
-#### :large_blue_diamond: Senior Frontend Engineer | QCerris
+### Senior Frontend Engineer | QCerris
 
 _2020 – 2023 Oct_
 
 - Successfully led the migration of a legacy React/Webpack project to Next.js 13 to utilize server-side rendering, serving mostly pre-rendered static pages, and improving crawlability for better on-page SEO.
 
-- As part of a development team was involved in planning and architecture of a healthy food delivery platform, our team successfully built a working meal planner based a user current diet, built using the following stack: React, Java, Jenkins.
+- As part of a development team was involved in planning and architecture of a healthy food delivery platform, our team successfully built a working meal planner based on a user’s current diet, built using the following stack: React, Java, Jenkins.
 
 - Successfully implemented a booking time slot calendar UI for a medical treatment platform using React and Redux as the front-end stack, helped the team with both the architecture of the whole booking site and platform in general.
 
@@ -63,7 +53,7 @@ _2020 – 2023 Oct_
 
 - Streamlined the tracking visibility platform translation process, by implementing a full circle translation upload process using Jenkins, nodejs, firebase, etc…
 
-#### :large_blue_diamond: Frontend Software Engineer | GenEng and Biotech News
+### Frontend Software Engineer | GenEng and Biotech News
 
 _2018 - 2019_
 
@@ -75,7 +65,7 @@ _2018 - 2019_
 
 - Created a ReactJS interface for organizing articles inside categories and ordering them with a drag and drop functionality.
 
-#### :large_blue_diamond: Full Stack Software Engineer | Command Media
+### Full Stack Software Engineer | Command Media
 
 _2014 - 2017_
 
@@ -91,32 +81,33 @@ _2014 - 2017_
 
 - Lead a project for a custom cashback service type website for businesses to advertise their offers/services.
 
-#### Other Experiences
+### Other experience
 
-- ##### Project - taglog
+#### Project — taglog
 
-  - Developed a front-end interface and a backend service with ReactJS and Nestjs for a web development tool app, serving as an online development logging console.
+- Developed a front-end interface and a backend service with ReactJS and Nestjs for a web development tool app, serving as an online development logging console.
 
-- ##### Web Developer - UpperEastDesign
+#### Web Developer — UpperEastDesign
 
-  _2012 - 2013_
+_2012 – 2013_
 
-- ##### Web Developer / Web Designer - TehnoMS
-  _2011 - 2012_
+#### Web Developer / Web Designer — TehnoMS
 
-#### Languages
+_2011 – 2012_
+
+### Languages
 
 - English, Fluent
 - Serbian, Native
 
-## :book: Education
+## Education
 
-#### Singidunum University
+### Singidunum University
 
 - Bachelor's degree - Business IT, Graphic Design
-  -- _2007 - 2011_
+  _2007 - 2011_
 
-#### Mechanical Technical School "15. maj" Niš
+### Mechanical Technical School "15. maj" Niš
 
 - Mechanical technician for computer-aided design
-  -- _2003 - 2007_
+  _2003 - 2007_

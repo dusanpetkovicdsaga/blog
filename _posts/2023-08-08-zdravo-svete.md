@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/hello-world.png
+image_alt: A notebook and laptop representing the start of a personal developer blog.
 title: Zdravo Svete
 categories: [content, demo, sr]
 lang: sr-RS
