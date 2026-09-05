@@ -23,5 +23,5 @@ permalink: /about/
     <article><i class="fa fa-commenting-o" aria-hidden="true"></i><h3>Clear communication</h3><p>I explain things in plain English and keep you in the loop.</p></article>
     <article><i class="fa fa-user-o" aria-hidden="true"></i><h3>Long-term partner, not just a contractor</h3><p>I care about your product and its success.</p></article>
   </div></section>
-  <section class="cta-band about-cta"><h2 class="cta-band__title">Let’s make your product<br>solid and future-proof.</h2><p>Book a free 20-minute call and let’s see how I can help.</p><a class="button-primary" href="{{ '/contact/' | relative_url }}">Book a free 20-minute call →</a></section>
+  <section class="cta-band about-cta"><h2 class="cta-band__title">Let’s make your product<br>solid and future-proof.</h2><p>Book a free 20-minute call and let’s see how I can help.</p><a class="button-primary" href="{{ site.booking_url }}">Book a free 20-minute call →</a></section>
 </div>

@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/coaching.png
+image_alt: Two software engineers sharing ideas during a one-on-one coaching conversation.
 title: Being a Developer Coach - What I Learned.
 categories: [management, coach, en]
 ---

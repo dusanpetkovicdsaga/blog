@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/layoff.png
+image_alt: Savings, a portfolio and a plan for a developer’s next career opportunity.
 title: Tips from me on how to survive a layoff in 2023
 categories: [tips, en]
 lang: en-US

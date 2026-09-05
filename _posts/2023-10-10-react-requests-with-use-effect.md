@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/react-effects.png
+image_alt: A controlled request and response loop connecting a React component to an API.
 title: Making network requests in React with useEffect, the correct way.
 categories: [react, hooks, en]
 ---

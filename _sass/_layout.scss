@@ -148,7 +148,7 @@ button { cursor: pointer; }
 }
 @media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-// Client reviews and résumé use the same spacing and typography as the About page.
+// Client reviews and resume use the same spacing and typography as the About page.
 .client-review { margin-bottom: 24px; }
 .review-project { font-size: 20px; margin: 0 0 16px; }
 .client-review .testimonial-card__quote { border: 0; padding: 0; background: transparent; color: #333; font-style: normal; font-size: 16px !important; line-height: 1.9; }
@@ -184,3 +184,5 @@ button { cursor: pointer; }
   .resume-content h2, .resume-content h3, .resume-content h5 { break-after: avoid; }
   .resume-content li { break-inside: avoid; }
 }
+
+.post-cover { display: block; width: 100%; height: auto; aspect-ratio: 1.65; object-fit: cover; border-radius: 5px; margin: 24px 0 32px; }

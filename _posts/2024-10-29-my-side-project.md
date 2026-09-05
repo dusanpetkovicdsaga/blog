@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/taglog.png
+image_alt: Application logs flowing into a developer’s organized logging console.
 title: My Side Project Journey - Building a Developer-Friendly Logging Tool
 categories: [taglog, sass, en]
 lang: en-US

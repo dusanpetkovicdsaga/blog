@@ -23,5 +23,5 @@ permalink: /audits/
     {% endfor %}
   </div>
   <p class="coming-soon">More audits coming soon.</p>
-  <section class="cta-band"><div><h2 class="cta-band__title">Want me to audit<br>your application?</h2><p class="cta-band__text">Book a free 20-minute call and I’ll take a look.</p></div><a class="button-primary" href="{{ '/contact/' | relative_url }}">Book a free 20-minute call →</a></section>
+  <section class="cta-band"><div><h2 class="cta-band__title">Want me to audit<br>your application?</h2><p class="cta-band__text">Book a free 20-minute call and I’ll take a look.</p></div><a class="button-primary" href="{{ site.booking_url }}">Book a free 20-minute call →</a></section>
 </div>

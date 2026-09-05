@@ -30,6 +30,8 @@ baseurl: "/blog"
 
 logo: "assets/image/dsaga-logo-m.png"
 
+booking_url: https://calendar.app.google/F8ifUa5jVEeHPwiB9
+
 # Navigation menu
 navigation_links:
   - title: Work with me
@@ -44,7 +46,7 @@ navigation_links:
   - title: About
     url: /about/
 
-  - title: Résumé
+  - title: Resume
     url: /resume/
 
   - title: Contact

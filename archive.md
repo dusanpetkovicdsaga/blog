@@ -14,14 +14,13 @@ permalink: /archive/
   </div>
   <div class="article-list">
     {% for post in site.posts %}
-    {% assign topics = 'Engineering' %}{% assign thumbnail = '/assets/image/audit-code.svg' %}
+    {% assign topics = 'Engineering' %}
     {% if post.categories contains 'migration' %}{% assign topics = 'AI-built apps,Engineering,Architecture' %}{% endif %}
-    {% if post.categories contains 'coach' or post.categories contains 'tips' %}{% assign topics = 'Career' %}{% assign thumbnail = '/assets/image/blog-career.svg' %}{% endif %}
-    {% if post.categories contains 'taglog' or post.categories contains 'bash' %}{% assign topics = 'Engineering,Tools' %}{% assign thumbnail = '/assets/image/audit-dashboard.svg' %}{% endif %}
-    {% if post.categories contains 'content' %}{% assign thumbnail = '/assets/image/blog-writing.svg' %}{% endif %}
+    {% if post.categories contains 'coach' or post.categories contains 'tips' %}{% assign topics = 'Career' %}{% endif %}
+    {% if post.categories contains 'taglog' or post.categories contains 'bash' %}{% assign topics = 'Engineering,Tools' %}{% endif %}
     {% assign words = post.content | strip_html | number_of_words %}{% assign minutes = words | plus: 199 | divided_by: 200 %}
     <article class="article-row" data-topics="{{ topics }}">
-      <a href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img class="article-image" src="{{ thumbnail | relative_url }}" alt="" width="600" height="380" loading="lazy"></a>
+      <a href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img class="article-image" src="{{ post.image | default: site.logo | relative_url }}" alt="" width="600" height="380" loading="lazy"></a>
       <div><p class="article-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time> · {{ minutes }} min read</p>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html | truncatewords: 40 | default: post.description }}</p>

@@ -1,5 +1,7 @@
 ---
 layout: post
+image: /assets/image/posts/uptime.png
+image_alt: A website heartbeat monitor sending a downtime alert to a phone.
 title: Free Downtime Monitor Tool - How to Setup?
 categories: [bash, slack]
 ---
