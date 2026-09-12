@@ -2,6 +2,11 @@
 layout: post
 title: "Mino audit: the small gaps between a working demo and a trustworthy signup"
 categories: [audits, accessibility, saas]
+audit: true
+permalink: /audits/mino-public-journey/
+image: /assets/image/posts/mino-audit.png
+image_alt: "Illustration of a task board, a repaired link, and a signup form with a privacy shield."
+summary: "A working public demo, a mistyped launch link, and practical improvements to signup accessibility and privacy navigation."
 draft: true
 ---
 
