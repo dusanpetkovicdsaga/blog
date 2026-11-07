@@ -60,6 +60,9 @@ footer_links:
   - title: LinkedIn
     url: https://www.linkedin.com/in/dusan-petkovic-5116b570/
     icon: fa fa-linkedin-square
+  - title: Upwork
+    url: https://www.upwork.com/freelancers/~0195b32047e0b2801c
+    icon: upwork
   - title: Email
     url: mailto:dulesaga@gmail.com
     icon: fa fa-envelope-o
