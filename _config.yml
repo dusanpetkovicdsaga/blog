@@ -62,7 +62,7 @@ footer_links:
     icon: fa fa-linkedin-square
   - title: Upwork
     url: https://www.upwork.com/freelancers/~0195b32047e0b2801c
-    icon: upwork
+    svg: /assets/image/upwork.svg
   - title: Email
     url: mailto:dulesaga@gmail.com
     icon: fa fa-envelope-o
